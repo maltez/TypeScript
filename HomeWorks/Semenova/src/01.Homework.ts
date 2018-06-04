@@ -1,7 +1,6 @@
 type toStringArgument = string | boolean | number | Array<any> | object | undefined;
 
-
-function toString(val: toStringArgument): string {
+function toStringConverter(val: any): string {
     // TODO: ask why this code throws an error;
     // switch (typeof val) {
     //     case 'boolean':
@@ -19,13 +18,18 @@ function toString(val: toStringArgument): string {
         return JSON.stringify(val);
     }  else if (typeof val === 'undefined') {
         return 'undefined';
-    } else {
-        return val.toString();
     }
+        return val.toString();
 }
 
-toString(true);
-toString(3);
+console.log(toStringConverter(true));
+console.log(toStringConverter(NaN));
+console.log(toStringConverter(undefined));
+console.log(toStringConverter('boo'));
+console.log(toStringConverter(45));
+console.log(toStringConverter({}));
+console.log(toStringConverter({cat: true}));
+
 
 
 function factorial(val: number): number {
