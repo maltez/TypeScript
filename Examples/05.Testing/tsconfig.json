@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "target": "es6",                          
+      "target": "es5",                          
       "module": "commonjs",                 
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
@@ -12,6 +12,6 @@
       "./src/**/*.ts"
     ],
     "exclude": [
-      "node_modules"
+      "node_modules", "build"
     ]
   }

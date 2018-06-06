@@ -13,3 +13,8 @@
     - BinConvertor(from decimal to binary)
     - OctalConvertor (from decimal to octal)
     - HexadecimalConvertor (from decimal to hexadecimal) 
+# Homework 4
+- Extends order class. Add discount field. Total = Sum all values - Sum all values discount /100.
+- Discount can not more than 100 and less than 0
+- Extend MathHelper. Add calculate fibonacci calculation(input number count - returns number with this count. Start 0)
+- Use TDD pattern.
